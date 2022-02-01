@@ -24,12 +24,13 @@ $docs-color-text: shade($color-silver, 70%);
 // Background of page
 div.rsg--root-1 {
   background: $color-white;
+  padding-top: 0;
 }
 
 // Main content
 main[class^="rsg--content"] {
   display: block; /* IE11 fix */
-  padding: $space-s $space-xl;
+  padding: 0 $space-xl;
   @media (max-width: #{$docs-breakpoint}) {
     padding: $space-s $space-m;
   }
@@ -51,20 +52,21 @@ main section section > div > div[class^="rsg--root"] {
 --------------------------------------------- */
 
 // Main headings
-div[class^="rsg--wrapper"] > h1[class^="rsg--heading"]{
-  background-image: url('/public/wave.svg');
-}
 // (includes h2 as well since in component views that’s the first heading)
 div[class^="rsg--wrapper"] > h1[class^="rsg--heading"],
 div[class^="rsg--wrapper"] > h2[class^="rsg--heading"] {
   display: block;
   border: 0;
   line-height: $line-height-s;
-  padding: $space-xl $space-xl;
+  padding: 120px 64px 0 64px;
   width: calc(100% + #{$space-xl * 2});
   margin: -#{$space-s} -#{$space-xl} $space-l -#{$space-xl};
   font-size: $size-xxl;
   font-weight: 800;
+  background-image: url('https://raw.githubusercontent.com/danielwang/AEMO-GEL/d45fd9aace393f2db9fda078121e67546b1e6c25/public/wave.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 -8px;
   a:hover {
     text-decoration: none;
     cursor: default;

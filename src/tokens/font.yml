@@ -5,11 +5,11 @@
 
 props:
   font_heading:
-    value: "'Fira Sans', Helvetica, Arial, sans-serif"
+    value: "'Avenir LT Std', Helvetica, Arial, sans-serif"
   font_text:
-    value: "'Fira Sans', Helvetica, Arial, sans-serif"
+    value: "'Avenir LT Std', Helvetica, Arial, sans-serif"
   weight_bold:
-    value: "700"
+    value: "800"
   weight_semi_bold:
     value: "600"
   weight_normal:
