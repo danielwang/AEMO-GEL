@@ -89,7 +89,7 @@ export default {
   transition: all 0.2s ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: $weight-semi-bold;
+  font-weight: $weight-bold;
   font-size: $size-m;
   font-family: $font-text;
   line-height: $line-height-m;
@@ -99,7 +99,7 @@ export default {
   justify-content: center;
   border: 0;
   box-shadow: inset 0 0 0 2px $color-bleu-de-france;
-  border-radius: $radius-default;
+  border-radius: 2rem;
   background: transparent;
   color: $color-bleu-de-france;
   cursor: pointer;
@@ -137,7 +137,6 @@ export default {
   // Various button sizes
   &.large {
     @include inset-squish-space($space-s);
-    font-size: $size-l;
   }
   &.medium {
     @include inset-squish-space($space-s);

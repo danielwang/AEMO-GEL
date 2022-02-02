@@ -27,6 +27,24 @@ div.rsg--root-1 {
   padding-top: 0;
 }
 
+div[class^="rsg--sidebar"] {
+  h1[class^="rsg--logo"] {
+    text-indent: -9999px;
+    background-image: url(https://aemo.com.au/-/media/project/aemo/global/logos/aemo-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 2rem;
+    padding: 1rem;
+  }
+
+  li[class^="rsg--item"] {
+    font-size: 1rem;
+  }
+
+  li[class^="rsg--isSelected"] > a {
+    color: #34b9b3;
+    background-color: rgba(52, 185, 179, 0.35);
+  }
+}
 // Main content
 main[class^="rsg--content"] {
   display: block; /* IE11 fix */
@@ -63,7 +81,7 @@ div[class^="rsg--wrapper"] > h2[class^="rsg--heading"] {
   margin: -#{$space-s} -#{$space-xl} $space-l -#{$space-xl};
   font-size: $size-xxl;
   font-weight: 800;
-  background-image: url('https://raw.githubusercontent.com/danielwang/AEMO-GEL/d45fd9aace393f2db9fda078121e67546b1e6c25/public/wave.svg');
+  background-image: url("https://raw.githubusercontent.com/danielwang/AEMO-GEL/d45fd9aace393f2db9fda078121e67546b1e6c25/public/wave.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 0 -8px;
@@ -222,9 +240,9 @@ div[class^="rsg--search"] input {
   @include inset-squish-space($space-s);
   color: $color-white;
   border: 1px solid transparent;
-  background: mix($color-bleu-de-france, $color-rich-black, 20%);
+  background: #502252;
   &:focus {
-    border: 1px solid $color-bleu-de-france;
+    border: 1px solid #702f73;
     &::-webkit-textfield-decoration-container {
       display: none !important;
     }
