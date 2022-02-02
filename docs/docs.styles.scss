@@ -35,16 +35,27 @@ div[class^="rsg--sidebar"] {
     background-position: 2rem;
     padding: 1rem;
   }
-
   li[class^="rsg--item"] {
     font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #502252;
+    a {
+      padding: 0.5rem 1rem;
+      color: white;
+      border-radius: 0.5rem;
+    }
+
+    li[class^="rsg--item"] {
+      border-bottom: 0;
+    }
   }
 
-  li[class^="rsg--isSelected"] > a {
+  li[class^="rsg--isSelected-38"] > a[href] {
     color: #34b9b3;
     background-color: rgba(52, 185, 179, 0.35);
   }
 }
+
 // Main content
 main[class^="rsg--content"] {
   display: block; /* IE11 fix */
